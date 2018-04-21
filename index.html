@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Start</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png"/>
+
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+	<section class="for-play">
+		<div class="dies-background">
+			<div id="one" class="show-one">
+				<div class="dies-one"></div>
+			</div>
+			<div id="two" class="show-two">
+				<div class="dies-one"></div>
+				<div class="dies-one"></div>
+			</div>
+			<div id="tree" class="dies-three">
+				<div class="dies-one"></div>
+				<div class="dies-one"></div>
+				<div class="dies-one"></div>
+			</div>
+			<div id="four" class="dies-four">
+				<div class="for-dividing">
+					<div class="dies-one"></div>
+					<div class="dies-one"></div>
+				</div>
+				<div class="for-dividing">
+					<div class="dies-one"></div>
+					<div class="dies-one"></div>
+				</div>
+			</div>
+			<div id="five" class="dies-five">
+				<div class="for-dividing">
+					<div class="dies-one"></div>
+					<div class="dies-one"></div>
+				</div>
+				<div class="for-dividing">
+					<div class="dies-one"></div>
+				</div>
+				<div class="for-dividing">
+					<div class="dies-one"></div>
+					<div class="dies-one"></div>
+				</div>
+			</div>
+			<div id="six" class="dies-six">
+				<div class="for-dividing">
+					<div class="dies-one"></div>
+					<div class="dies-one"></div>
+					<div class="dies-one"></div>
+				</div>
+				<div class="for-dividing">
+					<div class="dies-one"></div>
+					<div class="dies-one"></div>
+					<div class="dies-one"></div>
+				</div>
+			</div>
+		</div>
+		<div id="dies"></div>
+		<input type="submit" id="submit1" name="" value="Сlick on me!">
+	</section>
+
+	<script>
+		document.getElementById('submit1').onclick = function(){
+			var diesVal = Math.floor((Math.random() * 6) + 1);
+			document.getElementById('dies').innerHTML = diesVal;
+			console.log(diesVal);
+
+			if(diesVal === 1) {
+				document.getElementById('one').style.visibility = 'visible';
+			} else{
+				document.getElementById('one').style.visibility = 'hidden';
+			}
+			if(diesVal === 2) {
+				document.getElementById('two').style.visibility = 'visible';
+			} else{
+				document.getElementById('two').style.visibility = 'hidden';
+			}
+			if(diesVal === 3) {
+				document.getElementById('tree').style.visibility = 'visible';
+			} else{
+				document.getElementById('tree').style.visibility = 'hidden';
+			}
+			if(diesVal === 4) {
+				document.getElementById('four').style.visibility = 'visible';
+			} else{
+				document.getElementById('four').style.visibility = 'hidden';
+			}
+			if(diesVal === 5) {
+				document.getElementById('five').style.visibility = 'visible';
+			} else{
+				document.getElementById('five').style.visibility = 'hidden';
+			}
+			if(diesVal === 6) {
+				document.getElementById('six').style.visibility = 'visible';
+			} else{
+				document.getElementById('six').style.visibility = 'hidden';
+			}
+		}
+	</script>
+</body>
+</html>

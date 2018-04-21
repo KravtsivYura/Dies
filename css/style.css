@@ -1,0 +1,192 @@
+@import url(normalize.css);
+@import url(layout.css);
+.for-play {
+  padding: 100px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .for-play .dies-background {
+    min-width: 200px;
+    min-height: 200px;
+    background-color: #F5F5F5;
+    border: 5px solid #9B9B9B;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px; }
+    .for-play .dies-background .show-one {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      padding: 30px;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      margin-left: -5px;
+      margin-top: -5px;
+      visibility: hidden; }
+      .for-play .dies-background .show-one .dies-one {
+        border-radius: 50%;
+        background-color: #282828;
+        width: calc(33% - 10px);
+        height: calc(33% - 10px); }
+    .for-play .dies-background .show-two {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      padding: 30px;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      margin-left: -5px;
+      margin-top: -5px;
+      flex-direction: column;
+      visibility: hidden; }
+      .for-play .dies-background .show-two .dies-one {
+        border-radius: 50%;
+        background-color: #282828;
+        width: calc(33% - 10px);
+        height: calc(33% - 10px);
+        margin-bottom: 25px; }
+        .for-play .dies-background .show-two .dies-one:last-child {
+          margin-bottom: 0; }
+    .for-play .dies-background .dies-three {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      padding: 30px;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      margin-left: -5px;
+      margin-top: -5px;
+      flex-direction: column;
+      visibility: hidden; }
+      .for-play .dies-background .dies-three .dies-one {
+        border-radius: 50%;
+        background-color: #282828;
+        width: calc(33% - 10px);
+        height: calc(33% - 10px); }
+        .for-play .dies-background .dies-three .dies-one:last-child {
+          align-self: flex-end; }
+        .for-play .dies-background .dies-three .dies-one:first-child {
+          align-self: flex-start; }
+    .for-play .dies-background .dies-four {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      padding: 30px;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      margin-left: -5px;
+      margin-top: -5px;
+      visibility: hidden; }
+      .for-play .dies-background .dies-four .for-dividing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 50%;
+        height: 100%; }
+        .for-play .dies-background .dies-four .for-dividing:last-child {
+          align-items: flex-end; }
+        .for-play .dies-background .dies-four .for-dividing .dies-one {
+          border-radius: 50%;
+          background-color: #282828;
+          width: calc(33% - 10px);
+          height: calc(33% - 10px);
+          width: 40px;
+          height: 40px; }
+    .for-play .dies-background .dies-five {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      padding: 30px;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      margin-left: -5px;
+      margin-top: -5px;
+      visibility: hidden; }
+      .for-play .dies-background .dies-five .for-dividing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 33%;
+        height: 100%; }
+        .for-play .dies-background .dies-five .for-dividing:nth-child(2) {
+          align-items: center;
+          justify-content: center; }
+        .for-play .dies-background .dies-five .for-dividing:last-child {
+          align-items: flex-end; }
+        .for-play .dies-background .dies-five .for-dividing .dies-one {
+          border-radius: 50%;
+          background-color: #282828;
+          width: calc(33% - 10px);
+          height: calc(33% - 10px);
+          width: 40px;
+          height: 40px; }
+    .for-play .dies-background .dies-six {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      padding: 30px;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      margin-left: -5px;
+      margin-top: -5px;
+      visibility: hidden; }
+      .for-play .dies-background .dies-six .for-dividing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        height: 100%; }
+        .for-play .dies-background .dies-six .for-dividing .dies-one {
+          border-radius: 50%;
+          background-color: #282828;
+          width: calc(33% - 10px);
+          height: calc(33% - 10px);
+          width: 40px;
+          height: 40px; }
+  .for-play #dies {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #9B9B9B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-left: 10px; }
+  .for-play input {
+    outline: none;
+    border: 1px solid grey;
+    padding: 10px 50px 10px 50px;
+    border-radius: 7px;
+    font-size: 24px;
+    margin-left: 10px; }
+
+/*# sourceMappingURL=style.css.map */
